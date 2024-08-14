@@ -22,6 +22,7 @@ public class StatisticsDisplay implements Observer, DisplayElement {
 
 	@Override
 	public void update() {
+		// weatherData로 부터 pull해서 데이터를 가공
 		tempSum += weatherData.getTemperature();
 		numReadings++;
 

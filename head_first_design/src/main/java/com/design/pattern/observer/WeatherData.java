@@ -11,26 +11,29 @@ public class WeatherData implements Subject {
 
   private List<Observer> observers;
 
-  private float temperature;
+  private float temperature; // 온도
 
-  private float humidity;
+  private float humidity; // 습도
 
-  private float pressure;
+  private float pressure; // 기압
 
   public WeatherData() {
     observers = new ArrayList<>();
   }
 
+  // Observer 등록
   @Override
   public void registerObserver(Observer observer) {
     observers.add(observer);
   }
 
+  // Observer 제거
   @Override
   public void removeObserver(Observer observer) {
     observers.remove(observer);
   }
 
+  // Observer들에게 알리면 Observer 인터페이스를 이용해서 update
   @Override
   public void notifyObservers() {
     for (Observer observer : observers) {

@@ -17,8 +17,8 @@ public class ForecastDisplay implements Observer, DisplayElement {
   }
 
   public void update() {
-    lastPressure = currentPressure;
-    currentPressure = weatherData.getPressure();
+    this.lastPressure = currentPressure;
+    this.currentPressure = weatherData.getPressure(); // weatherData로 부터 pull
     display();
   }
 
