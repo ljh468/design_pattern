@@ -1,0 +1,17 @@
+package com.design.pattern._01_생성패턴._02_factory_method._03_java;
+
+import org.springframework.beans.factory.BeanFactory;
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+
+public class SpringBeanFactoryExample {
+
+  public static void main(String[] args) {
+    //    BeanFactory xmlFactory = new ClassPathXmlApplicationContext("config.xml");
+    //    String hello = xmlFactory.getBean("hello", String.class);
+    //    System.out.println(hello);
+
+    BeanFactory javaFactory = new AnnotationConfigApplicationContext(Config.class);
+    String hi = javaFactory.getBean("hello", String.class);
+    System.out.println(hi);
+  }
+}
