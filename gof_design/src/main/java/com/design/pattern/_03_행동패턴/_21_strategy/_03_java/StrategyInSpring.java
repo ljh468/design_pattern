@@ -1,7 +1,7 @@
 package com.design.pattern._03_행동패턴._21_strategy._03_java;
 
 import org.springframework.beans.factory.xml.BeanDefinitionParser;
-import org.springframework.boot.autoconfigure.transaction.PlatformTransactionManagerCustomizer;
+import org.springframework.boot.autoconfigure.transaction.TransactionManagerCustomizer;
 import org.springframework.cache.CacheManager;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
@@ -17,7 +17,7 @@ public class StrategyInSpring {
 
         BeanDefinitionParser parser;
 
-        PlatformTransactionManagerCustomizer platformTransactionManager;
+        TransactionManagerCustomizer transactionManagerCustomizer;
 
         CacheManager cacheManager;
     }

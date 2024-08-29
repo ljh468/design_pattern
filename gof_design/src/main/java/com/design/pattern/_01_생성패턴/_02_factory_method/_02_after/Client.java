@@ -8,6 +8,7 @@ public class Client {
     client.print(new BlackshipFactory(), "blackship", "keesun@mail.com");
   }
 
+  // 인터페이스 기반으로 ShipFactory를 의존성주입을 해준다고 가정
   private void print(ShipFactory shipFactory, String name, String email) {
     System.out.println(shipFactory.orderShip(name, email));
   }

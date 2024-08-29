@@ -7,10 +7,12 @@
         <option name="delegatedBuild" value="false" />
         <option name="testRunner" value="PLATFORM" />
         <option name="externalProjectPath" value="$PROJECT_DIR$/gof_design" />
-        <option name="gradleJvm" value="corretto-19" />
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$/gof_design" />
+            <option value="$PROJECT_DIR$/gof_design/singleton_app1" />
+            <option value="$PROJECT_DIR$/gof_design/singleton_app2" />
+            <option value="$PROJECT_DIR$/gof_design/singleton_common" />
           </set>
         </option>
       </GradleProjectSettings>

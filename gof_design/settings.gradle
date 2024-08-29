@@ -1,2 +1,4 @@
-rootProject.name = 'inflearn'
-
+rootProject.name = 'gof_design'
+include 'singleton_app1'
+include 'singleton_app2'
+include 'singleton_common'

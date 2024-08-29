@@ -8,7 +8,7 @@ public class Config {
 
   @Bean
   public String hello() {
-    return "hello";
+    return "Hello, Annotation Spring!";
   }
 
 }
