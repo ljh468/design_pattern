@@ -27,8 +27,7 @@ dependencies {
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
     implementation 'javax.mail:javax.mail-api:1.6.2'
     implementation 'org.springframework.boot:spring-boot-starter-mail:3.3.3'
-
-
+    implementation 'org.springframework.boot:spring-boot-starter-security'
 
     // DB 설정
     implementation 'org.springframework.boot:spring-boot-starter-data-jdbc'
