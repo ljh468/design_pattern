@@ -1,0 +1,31 @@
+package com.design.pattern._03_행동패턴._16_iterator._01_before;
+
+import java.util.List;
+
+public class Client {
+
+  public static void main(String[] args) {
+    Board board = new Board();
+    board.addPost("디자인 패턴 게임");
+    board.addPost("선생님, 저랑 디자인 패턴 하나 학습하시겠습니까?");
+    board.addPost("지금 이 자리에 계신 여러분들은 모두 디자인 패턴을 학습하고 계신 분들입니다.");
+
+    // TODO 들어간 순서대로 순회하기
+    List<Post> posts = board.getPosts();
+    for (int i = 0; i < posts.size(); i++) {
+      Post post = posts.get(i);
+      System.out.println(post.getTitle());
+    }
+
+    // TODO 가장 최신 글 먼저 순회하기
+    posts.sort((p1, p2) -> p2.getCreatedDateTime().compareTo(p1.getCreatedDateTime()));
+    for (int i = 0; i < posts.size(); i++) {
+      Post post = posts.get(i);
+      System.out.println(post.getTitle());
+    }
+
+    // 클라이언트가 board 안의 Posts의 내부 구조을 알게됨
+    // 내부구조를 숨기고, 공통으로 집합체에 접근할 수 있게 하는게 `Iterator패턴`
+  }
+
+}
