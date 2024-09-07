@@ -17,8 +17,9 @@
         </option>
       </GradleProjectSettings>
       <GradleProjectSettings>
+        <option name="delegatedBuild" value="false" />
+        <option name="testRunner" value="PLATFORM" />
         <option name="externalProjectPath" value="$PROJECT_DIR$/head_first_design" />
-        <option name="gradleJvm" value="corretto-20" />
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$/head_first_design" />
