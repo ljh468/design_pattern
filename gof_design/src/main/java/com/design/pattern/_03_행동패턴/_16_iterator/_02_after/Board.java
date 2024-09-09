@@ -19,7 +19,6 @@ public class Board {
     this.posts.add(new Post(content));
   }
 
-
   public Iterator<Post> getDefaultIterator() {
     return posts.iterator();
   }
