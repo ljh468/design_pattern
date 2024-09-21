@@ -9,24 +9,34 @@ import java.util.List;
 
 public class BeatModel implements BeatModelInterface, Runnable {
 
-  List<BeatObserver> beatObservers = new ArrayList<BeatObserver>();
+  // 비트와 BPM에 대한 옵저버들을 저장하는 리스트
+  List<BeatObserver> beatObservers = new ArrayList<>();
+  List<BPMObserver> bpmObservers = new ArrayList<>();
 
-  List<BPMObserver> bpmObservers = new ArrayList<BPMObserver>();
-
+  // 초기 BPM 값
   int bpm = 90;
 
+  // 비트 재생을 위한 스레드와 제어 플래그
   Thread thread;
-
   boolean stop = false;
 
+  // 오디오 클립 객체 (비트 소리)
   Clip clip;
 
+  /**
+   * 오디오 클립을 초기화하는 메서드.
+   * 사운드 파일을 지정된 경로에서 불러오고 Clip 객체에 할당합니다.
+   */
   public void initialize() {
     try {
-      File resource = new File("clap.wav");
+      // 사운드 파일 경로 지정
+      File resource = new File("head_first_design/src/main/java/com/design/pattern/combined/djview/clap.wav");
+      // 오디오 클립을 초기화
       clip = (Clip) AudioSystem.getLine(new Line.Info(Clip.class));
+      // 오디오 입력 스트림을 사용해 사운드 파일을 클립에 로드
       clip.open(AudioSystem.getAudioInputStream(resource));
     } catch (Exception ex) {
+      // 예외 발생 시 에러 메시지 출력
       System.out.println("Error: Can't load clip");
       System.out.println(ex);
     }
