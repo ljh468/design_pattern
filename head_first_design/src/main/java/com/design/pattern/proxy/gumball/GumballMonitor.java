@@ -3,6 +3,8 @@ package com.design.pattern.proxy.gumball;
 import java.rmi.RemoteException;
 
 public class GumballMonitor {
+
+  // 원격 인터페이스 사용
   GumballMachineRemote machine;
 
   public GumballMonitor(GumballMachineRemote machine) {

@@ -4,6 +4,7 @@ public class WinnerState implements State {
 
   private static final long serialVersionUID = 2L;
 
+  // GumballMachine 클래스는 직렬화에서 제외
   transient GumballMachine gumballMachine;
 
   public WinnerState(GumballMachine gumballMachine) {

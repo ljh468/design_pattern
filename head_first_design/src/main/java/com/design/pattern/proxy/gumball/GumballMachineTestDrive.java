@@ -16,10 +16,11 @@ public class GumballMachineTestDrive {
     try {
       count = Integer.parseInt(args[1]);
 
-      gumballMachine =
-          new GumballMachine(args[0], count);
+      gumballMachine = new GumballMachine(args[0], count);
       Naming.rebind("//" + args[0] + "/gumballmachine", gumballMachine);
+      System.out.println("Gumball Machine bound to RMI registry!");
     } catch (Exception e) {
+      System.out.println("RemoteException occurred: " + e.getMessage());
       e.printStackTrace();
     }
   }

@@ -2,12 +2,15 @@ package com.design.pattern.proxy.gumball;
 
 import java.io.Serializable;
 
+// rmi에 이용할 객체는 serializable 되어야 함
 public interface State extends Serializable {
-  public void insertQuarter();
 
-  public void ejectQuarter();
+  void insertQuarter();
 
-  public void turnCrank();
+  void ejectQuarter();
 
-  public void dispense();
+  void turnCrank();
+
+  void dispense();
+
 }
