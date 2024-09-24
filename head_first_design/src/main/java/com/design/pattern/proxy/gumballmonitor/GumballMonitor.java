@@ -1,6 +1,7 @@
 package com.design.pattern.proxy.gumballmonitor;
 
 public class GumballMonitor {
+
   GumballMachine machine;
 
   public GumballMonitor(GumballMachine machine) {

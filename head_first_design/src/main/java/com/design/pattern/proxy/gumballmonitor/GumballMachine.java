@@ -1,14 +1,21 @@
 package com.design.pattern.proxy.gumballmonitor;
 
 public class GumballMachine {
+
   State soldOutState;
+
   State noQuarterState;
+
   State hasQuarterState;
+
   State soldState;
+
   State winnerState;
 
   State state = soldOutState;
+
   int count = 0;
+
   String location;
 
   public GumballMachine(String location, int count) {
