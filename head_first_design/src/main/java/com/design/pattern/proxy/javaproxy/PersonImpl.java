@@ -1,10 +1,15 @@
 package com.design.pattern.proxy.javaproxy;
 
 public class PersonImpl implements Person {
+
   String name;
+
   String gender;
+
   String interests;
+
   int rating;
+
   int ratingCount = 0;
 
   public String getName() {

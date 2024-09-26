@@ -16,6 +16,7 @@ public interface Person {
 
   void setInterests(String interests);
 
+  // 괴짜지수를 계산
   void setGeekRating(int rating);
 
 }

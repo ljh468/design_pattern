@@ -5,21 +5,25 @@ import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 
 public class NonOwnerInvocationHandler implements InvocationHandler {
+
   Person person;
 
   public NonOwnerInvocationHandler(Person person) {
     this.person = person;
   }
 
-  public Object invoke(Object proxy, Method method, Object[] args)
-      throws IllegalAccessException {
+  public Object invoke(Object proxy, Method method, Object[] args) throws IllegalAccessException {
 
     try {
       if (method.getName().startsWith("get")) {
         return method.invoke(person, args);
-      } else if (method.getName().equals("setGeekRating")) {
+      }
+      // 다른사람의 괴짜지수는 변경 가능
+      else if (method.getName().equals("setGeekRating")) {
         return method.invoke(person, args);
-      } else if (method.getName().startsWith("set")) {
+      }
+      // 다른 사람의 정보는 변경 불가능
+      else if (method.getName().startsWith("set")) {
         throw new IllegalAccessException();
       }
     } catch (InvocationTargetException e) {
