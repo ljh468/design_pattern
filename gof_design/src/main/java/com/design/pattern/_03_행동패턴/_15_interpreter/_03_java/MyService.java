@@ -8,6 +8,7 @@ import org.springframework.stereotype.Service;
 @Service
 public class MyService implements ApplicationRunner {
 
+  // SpEL 표현식 처리: 수학 연산(+, -, *, /), 논리 연산, 조건문, 문자열 연산 등을 지원
   @Value("#{2 + 5}")
   private String value;
 
