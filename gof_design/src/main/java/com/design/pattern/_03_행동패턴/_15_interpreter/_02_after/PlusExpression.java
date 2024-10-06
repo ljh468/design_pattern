@@ -2,11 +2,10 @@ package com.design.pattern._03_행동패턴._15_interpreter._02_after;
 
 import java.util.Map;
 
+// Non Terminal Expression
 public class PlusExpression implements PostfixExpression {
 
-  private PostfixExpression left;
-
-  private PostfixExpression right;
+  private PostfixExpression left, right;
 
   public PlusExpression(PostfixExpression left, PostfixExpression right) {
     this.left = left;

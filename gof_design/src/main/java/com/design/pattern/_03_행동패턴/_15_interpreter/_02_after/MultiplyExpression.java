@@ -2,6 +2,7 @@ package com.design.pattern._03_행동패턴._15_interpreter._02_after;
 
 import java.util.Map;
 
+// Non Terminal Expression
 public class MultiplyExpression implements PostfixExpression {
 
   private PostfixExpression left, right;
