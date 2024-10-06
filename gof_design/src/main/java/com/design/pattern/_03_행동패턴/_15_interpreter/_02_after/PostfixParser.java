@@ -22,6 +22,8 @@ public class PostfixParser {
         PostfixExpression right = stack.pop();
         PostfixExpression left = stack.pop();
         return new MinusExpression(left, right);
+      case '*':
+        return new MultiplyExpression(stack.pop(), stack.pop());
       default:
         return new VariableExpression(c);
     }
