@@ -7,7 +7,7 @@ import org.springframework.expression.spel.standard.SpelExpressionParser;
 public class InterpreterInSpring {
 
   public static void main(String[] args) {
-    Book book = new Book("spring");
+    Book book = new Book("design pattern");
 
     ExpressionParser parser = new SpelExpressionParser();
     Expression expression = parser.parseExpression("title");

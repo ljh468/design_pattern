@@ -5,7 +5,7 @@ import java.util.Map;
 public class App {
 
   public static void main(String[] args) {
-    // 우리가 알고있는 문법의 구조로 변환
+    // 우리가 정의한 문법의 구조로 변환
     PostfixExpression expression = PostfixParser.parse("xyz+-");
 
     // 인터프리터 (매개변수를 맵으로 추가)

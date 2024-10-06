@@ -4,7 +4,7 @@ import java.util.Stack;
 
 public class PostfixParser {
 
-  // 넘어온 값은 "xyz+-"
+  // 예시 : 넘어온 값은 "xyz+-"
   public static PostfixExpression parse(String expression) {
     Stack<PostfixExpression> stack = new Stack<>();
     for (char c : expression.toCharArray()) {
