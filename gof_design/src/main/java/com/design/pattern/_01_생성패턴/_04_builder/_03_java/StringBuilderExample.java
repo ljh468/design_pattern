@@ -4,7 +4,9 @@ public class StringBuilderExample {
 
   public static void main(String[] args) {
     StringBuilder stringBuilder = new StringBuilder();
-    String result = stringBuilder.append("jaehoon").append("noah").toString();
+    String result = stringBuilder.append("jaehoon")
+                                 .append("noah")
+                                 .toString();
     System.out.println(result);
   }
 }
