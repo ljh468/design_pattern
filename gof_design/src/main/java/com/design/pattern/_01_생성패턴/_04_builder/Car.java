@@ -35,7 +35,7 @@ public class Car {
     private boolean navigation;
 
     // 필수값을 넣을 때 생성자에 추가하는 방식
-    public CarBuilder(String model, String color, int year) {
+    private CarBuilder(String model, String color, int year) {
       this.model = model;
       this.color = color;
       this.year = year;

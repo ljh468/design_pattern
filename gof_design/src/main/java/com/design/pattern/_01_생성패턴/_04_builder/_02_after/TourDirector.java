@@ -12,6 +12,10 @@ public class TourDirector {
     this.tourPlanBuilder = tourPlanBuilder;
   }
 
+  public void setTourPlanBuilder(TourPlanBuilder tourPlanBuilder) {
+    this.tourPlanBuilder = tourPlanBuilder;
+  }
+
   // TourDirector를 활용해서 만들어지는 프로세스들이 자주 반복 되면 미리 만들어서 재사용할 수 있게함
   public TourPlan cancunTrip() {
     return tourPlanBuilder.title("칸쿤 여행")

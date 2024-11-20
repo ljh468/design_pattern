@@ -18,6 +18,9 @@ public class LombokExample2 {
     private int nights;
     private int days;
 
+    private LombokExampleBuilder2() {
+    }
+
     public LombokExampleBuilder2 title(String title) {
       this.title = title;
       return this;
