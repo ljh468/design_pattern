@@ -1,6 +1,7 @@
 package com.design.pattern._03_행동패턴._17_mediator._01_before;
 
 public class CleaningService {
+
   public void clean(Gym gym) {
     System.out.println("clean " + gym);
   }
