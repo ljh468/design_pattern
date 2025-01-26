@@ -1,4 +1,4 @@
-package builder.vacation;
+package com.design.pattern.builder.vacation;
 
 public class OutdoorsVacationBuilder extends VacationBuilder {
 

@@ -1,4 +1,4 @@
-package builder.house;
+package com.design.pattern.builder.house;
 
 public class WoodHouseBuilder extends HouseBuilder {
   int numWalls = 6;     // 4 exterior walls, 2 interior

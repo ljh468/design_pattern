@@ -1,4 +1,4 @@
-package builder.house;
+package com.design.pattern.builder.house;
 
 import java.util.ArrayList;
 import java.util.List;

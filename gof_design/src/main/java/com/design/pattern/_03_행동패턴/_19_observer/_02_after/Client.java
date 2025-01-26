@@ -7,7 +7,7 @@ public class Client {
     User user1 = new User("user1");
     User user2 = new User("user2");
 
-    System.out.println("|user1| {나는솔로, 솔리지옥} 구독함");
+    System.out.println("|user1| {나는솔로, 솔로지옥} 구독함");
     chatServer.register("나는솔로", user1);
     chatServer.register("솔로지옥", user1);
     System.out.println("|user2| {나는솔로} 구독함");
@@ -15,18 +15,20 @@ public class Client {
     System.out.println();
 
     System.out.println("user1 -> 나는솔로 주제로 메시지 보냄");
-    chatServer.sendMessage(user1, "나는솔로", "아.. 이름이 기억났어.. 일남이야.. 오일남");
+    chatServer.sendMessage(user1, "나는솔로", "내 소설의 주인공은 너였어.");
     System.out.println();
 
     System.out.println("user2 -> 솔로지옥 주제로 메시지 보냄");
-    chatServer.sendMessage(user2, "솔로지옥", "옵저버 패턴으로 만든 채팅");
+    chatServer.sendMessage(user2, "솔로지옥", "선 넘어도 돼요?");
     System.out.println();
 
     System.out.println("|user2| {나는솔로} 구독취소");
     chatServer.unregister("나는솔로", user2);
+    System.out.println("|user1| {나는솔로, 솔로지옥} 구독함");
+    System.out.println("|user2| {} 구독함");
     System.out.println();
 
     System.out.println("user2 -> 나는솔로 주제로 메시지 보냄");
-    chatServer.sendMessage(user2, "나는솔로", "옵저버 패턴 장, 단점 보는 중");
+    chatServer.sendMessage(user2, "나는솔로", "넌 나를 좀 감동시키는 게 있긴 있어");
   }
 }

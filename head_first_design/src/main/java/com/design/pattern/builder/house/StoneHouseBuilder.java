@@ -1,4 +1,4 @@
-package builder.house;
+package com.design.pattern.builder.house;
 
 public class StoneHouseBuilder extends HouseBuilder {
   int numWalls = 5;     // Stone houses have 5 walls: 4 exterior, 1 interior

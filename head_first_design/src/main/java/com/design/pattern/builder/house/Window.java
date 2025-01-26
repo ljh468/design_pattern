@@ -1,11 +1,11 @@
-package builder.house;
+package com.design.pattern.builder.house;
 
-public class Wall {
+public class Window {
   String name;
   String material;
 
-  public Wall(String material) {
-    this.name = "Wall made out of " + material;
+  public Window(String material) {
+    this.name = "Window made out of " + material;
   }
 
   public void setName(String name) {

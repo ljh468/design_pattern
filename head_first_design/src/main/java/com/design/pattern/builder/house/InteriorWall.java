@@ -1,4 +1,4 @@
-package builder.house;
+package com.design.pattern.builder.house;
 
 public class InteriorWall extends Wall {
   String name;

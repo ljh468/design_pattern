@@ -1,4 +1,4 @@
-package builder.house;
+package com.design.pattern.builder.house;
 
 public abstract class HouseBuilder {
   String builderName;
