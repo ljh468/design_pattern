@@ -16,4 +16,8 @@ public class Singleton4 {
     return SingletonHolder.INSTANCE;
   }
 
+  // 역직렬화 시 readResolve 메서드를 꼭 호출하게 됨 (역직렬화 대응)
+  // protected Object readResolve() {
+  //   return getInstance();
+  // }
 }
