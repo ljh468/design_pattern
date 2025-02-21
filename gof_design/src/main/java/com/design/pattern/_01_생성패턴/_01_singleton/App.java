@@ -27,7 +27,7 @@ public class App {
     System.out.println("2. enum은 싱글톤을 깨뜨릴 수 없음");
     Singleton5 singleton3 = Singleton5.INSTANCE;
     /**
-     * enum은 생성자가 없어서 리플랙션 사용X - java.lang.NoSuchMethodException 에러 발생
+     * enum은 리플랙션에서 생성자에 접근할 수 없게 막아둠 - Cannot reflective creat enum objects 에러 발생
      * enum은 하나의 객체만을 보장하므로 enum 싱글톤 객체를 가져와서 사용할 수 있음
      *
      * Constructor<Singleton5> constructor2 = Singleton5.class.getDeclaredConstructor();
